@@ -6,14 +6,16 @@ html, body {
 
 body {
   min-height: 100%;
-  background-color: #eee;
+  background-color: #fff;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), color-stop(0.7, #fff), color-stop(0.9, #eee), to(#ccc));
+  background-image: -moz-linear-gradient(center top, #fff 0%, #eee 90%, #ccc 100%);
   color: #594F4F;
   font-family: 'Francois One', arial, sans-serif;
 }
 
 header {
   color: #333;
+  padding-top: 1.5em;
 }
 
 h1 {
@@ -25,6 +27,12 @@ h1 {
   padding: 0.1em;
   color: #FE4365;
   font-family: 'Annie Use Your Telescope', arial, sans-serif;
+}
+
+h1 span {
+  color: #aaa;
+  font-size: 0.5em;
+  font-weight: bold;
 }
 
 a {
@@ -64,24 +72,46 @@ header a:hover {
 }
 
 .contact_info li {
-  color: #0B8C8F;
+  color: #FE4365;
   font-style: normal;
   font-weight: normal;
-  font-family: georgia, 'times new roman', serif;
   line-height: 2.0em;
-  margin: 0 0.5em;
-  font-size: 1.4em;
-  line-height: 1.0em;
+  margin: 0 2.5em;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  line-height: 0.6em;
   display: inline-block;
 }
 
-#heard {
+.contact_info a {
+  display: inline-block;
+  padding-top: 138px;
+  min-width: 128px;
+  color: inherit;  
+}
+
+.contact_info .phone {
+  background: url('/images/phone.png') top center no-repeat;
+}
+
+.contact_info .email {
+  background: url('/images/email.png') top center no-repeat;
+}
+
+.contact_info .twitter {
+  background: url('/images/twitter.png') top center no-repeat;
+}
+
+#selection {
   font-size: 2.0em;
   padding: 2em;
   text-align: center;
 }
 
-#heard select {
+#selection select {
   font-size: 0.8em;
   background-color: #ddd;
+  border-radius: 8px;
+  position: relative;
+  top: -0.11em;
 }

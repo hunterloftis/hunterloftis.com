@@ -1,22 +1,25 @@
 header
   .messages!= messages()
   .wrap
-    h1 Hunter Loftis
+    h1
+      span I'm
+      |  Hunter Loftis.
 nav
   .wrap
-    p#heard
-      | So, you
+    p#selection
       select
         option
-        option(value='code') ...write code?
-        option(value='code') ...love JavaScript?
+        option(value='code') Designing stuff
+        option(value='code') Writing code
+        option(value='code') Building JavaScript
+      |  is what I do.
 article
 footer
-  .wrap
-    address.contact_info
-      ul
-        li 704.253.0040
-        li
-          a.email(href='mailto:hunter@hunterloftis.com') hunter@hunterloftis.com
-        li
-          a.twitter(href='http://www.twitter.com/hunterloftis') @hunterloftis  
+  address.contact_info
+    ul
+      li
+        a.phone(href='tel:7042530040') 704.253.0040
+      li
+        a.twitter(href='http://www.twitter.com/hunterloftis') @hunterloftis
+      li
+        a.email(href='mailto:hunter@hunterloftis.com') hunter@hunterloftis.com
