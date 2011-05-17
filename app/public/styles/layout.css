@@ -103,7 +103,7 @@ header a:hover {
   font-style: normal;
   font-weight: normal;
   line-height: 2.0em;
-  margin: 0 2.5em;
+  margin: 0 1em;
   font-size: 1.0em;
   letter-spacing: 0.1em;
   line-height: 0.6em;
@@ -130,4 +130,8 @@ header a:hover {
 
 .contact_info .twitter {
   background-image: url('/images/twitter.png');
+}
+
+.contact_info .cv {
+  background-image: url('/images/cv.png');
 }
