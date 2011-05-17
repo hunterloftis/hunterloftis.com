@@ -13,8 +13,6 @@ body {
 }
 
 header {
-  background-color: #F38630;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A7DBD8), color-stop(0.9, #A7DBD8), to(#87cBc8));
   color: #333;
 }
 
@@ -25,12 +23,17 @@ h1 {
   position: relative;
   top: 0.29em;
   padding: 0.1em;
-  color: #fff;
+  color: #FE4365;
   font-family: 'Annie Use Your Telescope', arial, sans-serif;
 }
 
 a {
-  color: #F38630;
+  color: #0B8C8F;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 li {
@@ -53,14 +56,15 @@ header a:hover {
 
 .contact_info {
   padding: 1.8em;
-  position: absolute;
-  top: 0;
+  text-align: center;
+  position: fixed;
+  bottom: 1em;
+  left: 0;
   right: 0;
 }
 
 .contact_info li {
-  color: #fff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+  color: #0B8C8F;
   font-style: normal;
   font-weight: normal;
   font-family: georgia, 'times new roman', serif;
@@ -68,6 +72,7 @@ header a:hover {
   margin: 0 0.5em;
   font-size: 1.4em;
   line-height: 1.0em;
+  display: inline-block;
 }
 
 #heard {
