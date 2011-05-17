@@ -18,6 +18,8 @@ nav
         option(value='code') Realtime interaction
       |  is what I do.
 article
+  .wrap
+    p.response This is where the response goes.
 footer
   address.contact_info
     ul
@@ -27,7 +29,8 @@ footer
         a.twitter(href='http://www.twitter.com/hunterloftis') @hunterloftis
       li
         a.email(href='mailto:hunter@hunterloftis.com') hunter@hunterloftis.com
-script
-  function ViewModel() {
-    this.topics = [];
-  }
+        
+script(src='/lib/knockout-1.2.0.js')
+script(src='/lib/underscore-min.js')
+script(src='/lib/zepto.min.js')
+script(src='/js/main.js')

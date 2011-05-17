@@ -76,6 +76,12 @@ header a:hover {
   top: -0.11em;
 }
 
+.response {
+  max-width: 40em;
+  border: solid 1px red;
+  margin: 0 auto;
+}
+
 .contact_info {
   padding: 1.8em 0;
   text-align: center;
