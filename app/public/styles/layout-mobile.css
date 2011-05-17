@@ -13,6 +13,6 @@
   padding-left: 138px;
   padding-top: 64px;
   padding-bottom: 64px;
-  background-position: left top;
+  background-position: left top !important;
   vertical-align: middle;
 }

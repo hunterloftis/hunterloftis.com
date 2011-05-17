@@ -112,6 +112,7 @@ header a:hover {
 
 .contact_info .email {
   background-image: url('/images/email.png');
+  background-position: center 7px;
 }
 
 .contact_info .twitter {
