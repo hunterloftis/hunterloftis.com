@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var cluster = require('cluster'),
     port    = 80;
 
