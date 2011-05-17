@@ -6,7 +6,8 @@ var root = require('path').normalize(__dirname + '/../../');
 
 var express = require('express'),
     connectTimeout = require('connect-timeout'),
-    context = require('../../lib/context');
+    context = require('../../lib/context'),
+    stylus = require('stylus');
 
 require('../../lib/math.uuid');
 
@@ -15,7 +16,7 @@ require('../../lib/math.uuid');
 exports = module.exports = (function() {
   
   var server = express.createServer(),
-      options = require('./constants')([server.set('env')]);
+      options = require('./options')([server.set('env')]);
 
   console.log("Environment: " + server.set('env'));
   
@@ -25,16 +26,21 @@ exports = module.exports = (function() {
     
     // Settings
     
-    server.set('app root', root + '/app')
-    server.set('view engine', options.view_engine || 'jade')
-    server.set('views', server.set('app root') + '/views')
+    server.set('app root', root + '/app');
+    server.set('view engine', options.view_engine || 'jade');
+    server.set('views', server.set('app root') + '/views');
+    server.set('public', server.set('app root') + '/public');
     server.set('port', options.port);
     server.set('host', options.host);
     
     // Middleware
     
     server.use(connectTimeout({ time: options.reqTimeout }));
-    server.use(express.static(server.set('app root') + '/public'));
+    server.use(stylus.middleware({
+      src: server.set('views') + '/stylus',
+      dest: server.set('public')
+    }));
+    server.use(express.static(server.set('public')));
     server.use(express.cookieParser());
     server.use(express.session({
       secret: Math.uuidFast(),
