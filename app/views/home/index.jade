@@ -3,23 +3,42 @@ header
   .wrap
     h1
       span I'm
-      |  Hunter Loftis.
+      |  Hunter Loftis,
 nav
   .wrap
     p#selection
-      select
-        option
-        option(value='code') Building apps
-        option(value='code') Coding JavaScript
-        option(value='code') Hacking HTML 5
-        option(value='code') Mobile web
-        option(value='code') User experience
-        option(value='code') Web design
-        option(value='code') Realtime interaction
-      |  is what I do.
+      | and I
+      strong(data-bind='text: activeVerb')
+      | 
+      select(data-bind='options: topics, optionsText: "noun", value: activeTopic')
 article
   .wrap
-    p.response This is where the response goes.
+    .response
+      div(data-bind='visible: (activeTopic().value === "apps")')
+        p.
+          Static sites are for sissies. Smart, interactive, engaging applications are where it's at.
+          I've built them in <a href='http://ilovestressless.com/floorplanner/'>Flex</a>, but I prefer <a href='http://www.clickdummy.com'>HTML 5</a>.
+      div(data-bind='visible: (activeTopic().value === "js")')
+        p.
+          I've built one of the largest node.js <a href='http://www.clickdummy.com'>web apps</a>,
+          have <a href='http://max.skookumlabs.com/'>advanced</a> JavaScript <a href='https://developer.mozilla.org/en-US/demos/detail/ghostwriter-art-studio'>demos</a> scattered <a href='http://10k.aneventapart.com/Uploads/417/'>over</a> the <a href='http://labs.skookum.com/demos/canvastest/'>web</a>, contribute to several
+          JS open-source <a href='https://github.com/hunterloftis/knockout.namespaces'>projects</a>, and organize the local <a href='http://www.charlottejs.org/'>CharlotteJS</a> meetup group.
+          I'm a JavaScript Junkie.
+      div(data-bind='visible: (activeTopic().value === "html5")')
+        p.
+          More than just a buzzword, HTML5 and related technologies provide fantastic new capabilities.
+          I'm enthusiastically leaping into the semantic web, the realtime web, and the mobile web.
+          I also occasionally provide <a href='http://www.cpcc.edu/thegeekfest/2010/sessions'>HTML5</a> <a href='http://answers.onstartups.com/questions/16321/impact-to-internet-landscape-due-to-html5'>presentations</a>, <a href='https://developer.mozilla.org/en-US/demos/detail/ghostwriter-art-studio'>demos</a>, and <a href='http://www.canvasdemos.com/2010/11/04/simple-game-physics/'>tutorials</a>.
+      div(data-bind='visible: (activeTopic().value === "mobile")')
+        p.
+          Native apps are here to stay, but the day-to-day mobile experience will shift into the browser just like its desktop counterpart already has.
+          I build sites with responsive CSS (check this page out on your device!) as well as full mobile apps in HTML5 that work offline and can be distributed as native apps via Phonegap.
+      div(data-bind='visible: (activeTopic().value === "ux")')
+        | ux
+      div(data-bind='visible: (activeTopic().value === "design")')
+        | design
+      div(data-bind='visible: (activeTopic().value === "realtime")')
+        | realtime
 footer
   address.contact_info
     ul
@@ -29,8 +48,9 @@ footer
         a.twitter(href='http://www.twitter.com/hunterloftis') @hunterloftis
       li
         a.email(href='mailto:hunter@hunterloftis.com') hunter@hunterloftis.com
-        
+              
 script(src='/lib/knockout-1.2.0.js')
 script(src='/lib/underscore-min.js')
 script(src='/lib/zepto.min.js')
+
 script(src='/js/main.js')

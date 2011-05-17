@@ -9,24 +9,20 @@ body {
   background-color: #fff;
   background-image: -webkit-radial-gradient(center top, circle cover, #fff, #fff 25%, #eee 60%, #bbb);
   background-image: -moz-radial-gradient(center top, circle cover, #fff, #fff 25%, #eee 60%, #bbb);
-  color: #594F4F;
-  font-family: 'Francois One', arial, sans-serif;
+  color: #777;
+  font-family: 'Annie Use Your Telescope', arial, sans-serif;
 }
 
 header {
-  color: #333;
-  padding-top: 1.5em;
+  padding: 3em 0 0 0;
 }
 
 h1 {
   text-align: center;
   font-size: 5.2em;
   font-weight: normal;
-  position: relative;
-  top: 0.29em;
-  padding: 0.1em 0;
+  padding: 0.2em 0 0.2em 0;
   color: #FE4365;
-  font-family: 'Annie Use Your Telescope', arial, sans-serif;
 }
 
 h1 span {
@@ -63,9 +59,12 @@ header a:hover {
 }
 
 #selection {
-  font-size: 2.0em;
-  padding: 2em;
+  color: #aaa;
+  font-weight: bold;
+  font-size: 2.4em;
+  padding: 0 0 0.7em 0;
   text-align: center;
+  font-family: 'Annie Use Your Telescope', arial, sans-serif;
 }
 
 #selection select {
@@ -76,10 +75,17 @@ header a:hover {
   top: -0.11em;
 }
 
+#selection strong {
+  /*text-decoration: underline;*/
+  color: #FE4365;
+}
+
 .response {
-  max-width: 40em;
-  border: solid 1px red;
+  max-width: 20em;
   margin: 0 auto;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  text-align: center;
 }
 
 .contact_info {
@@ -89,6 +95,7 @@ header a:hover {
   bottom: 1em;
   left: 0;
   right: 0;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
 
 .contact_info li {
@@ -97,7 +104,7 @@ header a:hover {
   font-weight: normal;
   line-height: 2.0em;
   margin: 0 2.5em;
-  font-size: 0.8em;
+  font-size: 1.0em;
   letter-spacing: 0.1em;
   line-height: 0.6em;
   display: inline-block;
