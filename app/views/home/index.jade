@@ -34,11 +34,15 @@ article
           Native apps are here to stay, but the day-to-day mobile experience will shift into the browser just like its desktop counterpart already has.
           I build sites with responsive CSS (check this page out on your device!) as well as full mobile apps in HTML5 that work offline and can be distributed as native apps via Phonegap.
       div(data-bind='visible: (activeTopic().value === "ux")')
-        | ux
+        p.
+          "As far as the user is concerned, <strong>the UI is the application</strong>" (<a href="http://www.codinghorror.com/blog/2005/08/the-user-interface-is-the-application.html">Jeff Atwood</a>).
+          I love user testing because I enjoy surprises. Generally, what I think is clever, the target audience thinks is kitch, and what I think is dull, the users find intuitive. I enjoy building based on data rather than intuition.
       div(data-bind='visible: (activeTopic().value === "design")')
-        | design
+        p.
+          I began my career in software not as a developer, but as a web designer. These days, I merge my two pursuits!
       div(data-bind='visible: (activeTopic().value === "realtime")')
-        | realtime
+        p.
+          The realtime web is here. (write more here later)
 footer
   address.contact_info
     ul
