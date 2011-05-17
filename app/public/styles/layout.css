@@ -1,0 +1,82 @@
+@import url('reset.css');
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #eee;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), color-stop(0.7, #fff), color-stop(0.9, #eee), to(#ccc));
+  color: #594F4F;
+  font-family: 'Francois One', arial, sans-serif;
+}
+
+header {
+  background-color: #F38630;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A7DBD8), color-stop(0.9, #A7DBD8), to(#87cBc8));
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5.2em;
+  font-weight: normal;
+  position: relative;
+  top: 0.29em;
+  padding: 0.1em;
+  color: #fff;
+  font-family: 'Annie Use Your Telescope', arial, sans-serif;
+}
+
+a {
+  color: #F38630;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.contact_info {
+  padding: 1.8em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.contact_info li {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+  font-style: normal;
+  font-weight: normal;
+  font-family: georgia, 'times new roman', serif;
+  line-height: 2.0em;
+  margin: 0 0.5em;
+  font-size: 1.4em;
+  line-height: 1.0em;
+}
+
+#heard {
+  font-size: 2.0em;
+  padding: 2em;
+  text-align: center;
+}
+
+#heard select {
+  font-size: 0.8em;
+  background-color: #ddd;
+}

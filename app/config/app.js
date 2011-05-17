@@ -6,8 +6,7 @@ var root = require('path').normalize(__dirname + '/../../');
 
 var express = require('express'),
     connectTimeout = require('connect-timeout'),
-    context = require('../../lib/context'),
-    stylus = require('stylus');
+    context = require('../../lib/context');
 
 require('../../lib/math.uuid');
 
@@ -36,10 +35,6 @@ exports = module.exports = (function() {
     // Middleware
     
     server.use(connectTimeout({ time: options.reqTimeout }));
-    server.use(stylus.middleware({
-      src: server.set('views') + '/stylus',
-      dest: server.set('public')
-    }));
     server.use(express.static(server.set('public')));
     server.use(express.cookieParser());
     server.use(express.session({
