@@ -7,8 +7,8 @@ html, body {
 body {
   min-height: 100%;
   background-color: #fff;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), color-stop(0.7, #fff), color-stop(0.9, #eee), to(#ccc));
-  background-image: -moz-linear-gradient(center top, #fff 0%, #eee 90%, #ccc 100%);
+  background-image: -webkit-radial-gradient(center top, circle cover, #fff, #fff 25%, #eee 60%, #bbb);
+  background-image: -moz-radial-gradient(center top, circle cover, #fff, #fff 25%, #eee 60%, #bbb);
   color: #594F4F;
   font-family: 'Francois One', arial, sans-serif;
 }
@@ -24,7 +24,7 @@ h1 {
   font-weight: normal;
   position: relative;
   top: 0.29em;
-  padding: 0.1em;
+  padding: 0.1em 0;
   color: #FE4365;
   font-family: 'Annie Use Your Telescope', arial, sans-serif;
 }
@@ -49,7 +49,7 @@ li {
 }
 
 .wrap {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -62,8 +62,22 @@ header a:hover {
   text-decoration: underline;
 }
 
+#selection {
+  font-size: 2.0em;
+  padding: 2em;
+  text-align: center;
+}
+
+#selection select {
+  font-size: 0.8em;
+  background-color: #ddd;
+  border-radius: 8px;
+  position: relative;
+  top: -0.11em;
+}
+
 .contact_info {
-  padding: 1.8em;
+  padding: 1.8em 0;
   text-align: center;
   position: fixed;
   bottom: 1em;
@@ -87,31 +101,19 @@ header a:hover {
   display: inline-block;
   padding-top: 138px;
   min-width: 128px;
-  color: inherit;  
+  color: inherit;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .contact_info .phone {
-  background: url('/images/phone.png') top center no-repeat;
+  background-image: url('/images/phone.png');
 }
 
 .contact_info .email {
-  background: url('/images/email.png') top center no-repeat;
+  background-image: url('/images/email.png');
 }
 
 .contact_info .twitter {
-  background: url('/images/twitter.png') top center no-repeat;
-}
-
-#selection {
-  font-size: 2.0em;
-  padding: 2em;
-  text-align: center;
-}
-
-#selection select {
-  font-size: 0.8em;
-  background-color: #ddd;
-  border-radius: 8px;
-  position: relative;
-  top: -0.11em;
+  background-image: url('/images/twitter.png');
 }

@@ -1,5 +1,5 @@
 var cluster = require('cluster'),
-    port    = 3100;
+    port    = 80;
 
 console.log("Opening server on port " + port + "...");
 

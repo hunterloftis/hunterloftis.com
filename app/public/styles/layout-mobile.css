@@ -1,0 +1,18 @@
+.contact_info {
+  position: static;
+  text-align: left;
+}
+
+.contact_info li {
+  font-size: 1.8em;
+  display: block;
+}
+
+.contact_info a {
+  padding-top: 0;
+  padding-left: 138px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-position: left top;
+  vertical-align: middle;
+}
