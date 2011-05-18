@@ -7,6 +7,7 @@
   ko.dobs = ko.dependentObservable;
   
   function ViewModel() {
+    this.stillBinding = false;
     this.topics = ko.obsa([
       { value: '', verb: 'do:', noun: '...' },
       { value: 'js', verb: 'love', noun: 'JavaScript.' },

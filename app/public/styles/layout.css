@@ -49,6 +49,10 @@ li {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
 header a {
   color: #fff;
   text-decoration: none;
@@ -80,7 +84,7 @@ header a:hover {
   color: #FE4365;
 }
 
-.response {
+#response {
   max-width: 20em;
   margin: 0 auto;
   font-size: 1.8em;

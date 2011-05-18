@@ -13,7 +13,7 @@ nav
       select(data-bind='options: topics, optionsText: "noun", value: activeTopic')
 article
   .wrap
-    .response
+    #response.hidden(data-bind='css: {hidden: stillBinding}')
       div(data-bind='visible: (activeTopic().value === "apps")')
         p.
           Static sites are for sissies. Smart, interactive, engaging applications are where it's at.
