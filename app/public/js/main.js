@@ -34,8 +34,9 @@
       { value: 'html5', verb: 'embrace', noun: 'HTML 5.' },
       { value: 'mobile', verb: 'create', noun: 'the mobile web.' },
       { value: 'ux', verb: 'obsess over', noun: 'user experience.' },
-      { value: 'design', verb: 'strive for', noun: 'beautiful design.' },
-      { value: 'realtime', verb: 'develop', noun: 'realtime interactions.' }
+      { value: 'design', verb: 'promote', noun: 'beautiful design.' },
+      { value: 'realtime', verb: 'enable', noun: 'realtime interactions.' },
+      { value: 'skookum', verb: 'work at', noun: 'Skookum.' }
     ]);
     this.activeTopic = ko.obs(this.topics()[0]);
     this.activeVerb = ko.dobs(function() {
