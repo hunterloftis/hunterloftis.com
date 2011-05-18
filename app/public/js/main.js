@@ -41,6 +41,10 @@
     this.activeVerb = ko.dobs(function() {
       return this.activeTopic().verb;
     }, this);
+    
+    this.activeTopic.subscribe(function(topic) {
+      _trackEvent('topics', 'select', topic.noun); 
+    });
   }
   
   function bindVM() {
