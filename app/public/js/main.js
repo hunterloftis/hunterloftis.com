@@ -43,7 +43,7 @@
     }, this);
     
     this.activeTopic.subscribe(function(topic) {
-      _trackEvent('topics', 'select', topic.noun); 
+      _gaq.push(['_trackEvent', 'topics', 'select', topic.noun]); 
     });
   }
   
