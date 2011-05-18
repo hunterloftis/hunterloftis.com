@@ -1,0 +1,4 @@
+#!/bin/sh
+
+GET_WORK_TREE=/var/node/hunterloftis.com git checkout -f
+chmod +x /var/node/hunterloftis.com/server.js
