@@ -21,8 +21,6 @@
   
   $(document).ready(function() {
     bindVM();
-    createClouds();
-    animateClouds();
   });
   
   // Helper functions
@@ -48,33 +46,6 @@
   function bindVM() {
     var viewModel = new ViewModel();
     ko.applyBindings(viewModel);
-  }
-  
-  function createClouds() {
-    var cloudCountainer = $('#clouds'),
-        cloudCount = 3,
-        clouds, i;
-    for (i = 0; i < cloudCount; i++) {
-      var newCloud = $('canvas').addClass('cloud');
-      newCloud.attr('width', 300);
-      newCloud.attr('height', 150);
-      cloudContainer.
-    }
-    clouds.each(function() {
-      $(this).offset({ left: 0, top: 0});
-    });
-  }
-  
-  function animateClouds() {
-    var clouds = $('.cloud'),
-        i;
-    (function update() {
-      clouds.each(function() {
-        var off = $(this).offset();
-        $(this).offset({ left: off.left + 1, top: off.top });
-      })
-      window.setTimeout(update, 30);
-    })();
   }
   
 })($, ko);
