@@ -93,13 +93,6 @@ header a:hover {
   position: relative;
 }
 
-#response li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 .contact_info {
   padding: 1.8em 0;
   text-align: center;

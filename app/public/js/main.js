@@ -13,7 +13,7 @@
       $(element).toggle(ko.utils.unwrapObservable(valueAccessor()));
     },
     update: function (element, valueAccessor) {
-      ko.utils.unwrapObservable(valueAccessor()) ? $(element).fadeIn() : $(element).fadeOut();
+      ko.utils.unwrapObservable(valueAccessor()) ? $(element).fadeIn() : $(element).hide();
     }
   };
   
