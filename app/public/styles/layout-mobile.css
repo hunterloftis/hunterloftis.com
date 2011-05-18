@@ -16,3 +16,8 @@
   background-position: left top !important;
   vertical-align: middle;
 }
+
+#response {
+  font-size: 2.4em;
+  margin: 0 1em;
+}
