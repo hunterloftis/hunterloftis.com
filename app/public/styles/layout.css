@@ -90,6 +90,14 @@ header a:hover {
   font-size: 1.8em;
   line-height: 1.2em;
   text-align: center;
+  position: relative;
+}
+
+#response li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .contact_info {
