@@ -34,7 +34,7 @@
       { value: 'html5', verb: 'embrace', noun: 'HTML 5.' },
       { value: 'mobile', verb: 'create', noun: 'the mobile web.' },
       { value: 'ux', verb: 'obsess over', noun: 'user experience.' },
-      { value: 'design', verb: 'exhibit', noun: 'beautiful design.' },
+      { value: 'design', verb: 'strive for', noun: 'beautiful design.' },
       { value: 'realtime', verb: 'develop', noun: 'realtime interactions.' }
     ]);
     this.activeTopic = ko.obs(this.topics()[0]);
